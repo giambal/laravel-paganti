@@ -20,7 +20,7 @@ class PagantiController extends Controller{
 
     $pagante = DB::table('paganti')
                         ->selectRaw('id, name, lastname')
-                        ->where('id', '=', '$id')
+                        ->where('id', '=', $id)
                         ->get();
 
     dd($pagante);
